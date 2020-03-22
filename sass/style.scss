@@ -1,2 +1,27 @@
+@import 'reset';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', 'Lato', 'Helvetica', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
 @import 'variables';
 @import 'grid';
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+@import 'nav';

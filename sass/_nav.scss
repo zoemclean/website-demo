@@ -1,0 +1,32 @@
+.navbar {
+    background-color: $primaryColour;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navLogo {
+    width: 150px;
+}
+
+.navList {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.listItem {
+    padding: 20px;
+    font-size: 20px;
+}
