@@ -1,0 +1,69 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+
+    // background-image: url('../images/banner.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImage {
+    display: none;
+}
+
+.bannerText {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.buttonHeader {
+    width: 100%;
+}
+
+@media screen and (min-width: $mdWidth){
+    .banner {
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    .buttonHeader {
+        width: auto;
+    }
+
+    .bannerImage {
+        display: block;
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: $lgWidth){
+    .banner {
+        height: 90vh;
+        margin-bottom: 13vh;
+        .container{
+            padding: 0 10px;
+            position: relative;
+            bottom: -10vh;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .bannerText {
+        text-align: left;
+        padding: 0;
+    }
+
+    .bannerImage {
+        margin: 0;
+    }
+
+}

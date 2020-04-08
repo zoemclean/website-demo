@@ -1,11 +1,13 @@
 .navbar {
-    background-color: $primaryColour;
     padding: 10px;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10000;
+
+    transition: background-color 0.25s;
 }
 
 .navContainer {
@@ -29,4 +31,37 @@
 .listItem {
     padding: 20px;
     font-size: 20px;
+}
+
+@media screen and (min-width: $mdWidth){
+    .navContainer {
+        flex-direction: column;
+    }
+
+    .navIcon {
+        display: none;
+    }
+
+    .navList {
+        display: block !important;
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .listItem {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: $lgWidth){
+    .navContainer {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .navList {
+        width: auto;
+    }
 }

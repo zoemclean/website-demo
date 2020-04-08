@@ -1,9 +1,6 @@
 $columns: 12;
 $columnWidth: 100% / $columns;
 
-$mdWidth: 600px;
-$lgWidth: 900px;
-
 @mixin clear{
     &::after{
         clear: both;

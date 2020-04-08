@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Open Sans', 'Lato', 'Helvetica', sans-serif;
+    font-size: 20px;
 }
 
 img {
@@ -19,9 +20,84 @@ img {
 @import 'grid';
 
 .container {
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.bgRed {
+    background-color: $primaryColour !important;
+}
+
+.textRed {
+    color: $primaryColour;
+}
+
+.textWhite {
+    color: white;
+}
+
+.mainHeading {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border-color: transparent;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.buttonRound {
+    border-radius: 15px;
+}
+
+.buttonLarge {
+    font-size: 1.5em;
+    padding: 10px 50px;
+}
+
+.buttonMedium {
+    font-size: 1.2em;
+    padding: 7px 35px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.paddingContainer {
+    padding: 12px 20px;
+}
+
+.paddingHeading {
+    padding: 30px;
+}
+
+.featureImage {
+    max-width: 175px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.subHeading {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.paddingPara {
+    padding: 12px 20px;
 }
 
 
 @import 'nav';
+@import 'header';
+@import 'altSections';

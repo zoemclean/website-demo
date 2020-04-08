@@ -1,0 +1,36 @@
+.imageCol{
+    padding: 2em;
+}
+
+.textCol{
+    text-align: center;
+}
+
+@media screen and (min-width: $mdWidth){
+    .altRow{
+        margin: 6em 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        &:nth-child(odd){
+            .imageCol{
+                order: 1;
+            }
+            .textCol{
+                order: 2;
+                text-align: left;
+            }
+        }
+        &:nth-child(even){
+            // flex-direction: row-reverse;
+            .imageCol{
+                order: 2;
+                text-align: right;
+            }
+            .textCol{
+                order: 1;
+                text-align: right;
+            }
+        }
+    }
+}
